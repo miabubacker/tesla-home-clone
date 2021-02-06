@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+ 
+    <div class="_2st">
+       
+        <h4>guio</h4>
+       <input id="inputkey" type="text">
+       <input  id="inputvalue" type="text">
+       <div id="outp"></div>
+        <button type="button" id="insert">click</button>
+    
+        <!-- <button type="button" id="viewssss">view</button> -->
+    </div>
+    <script>
+/***********************************************************/
+
+// localStorage.setItem('ANIMALS',"TIGER,LION")
+// localStorage.setItem('HUMAN','BOY,GIRL')
+// console.log(localStorage.key(1));
+
+var inputkey=document.getElementById("inputkey");
+var inputvalue=document.getElementById("inputvalue");
+var btn=document.getElementById('insert');
+var op=document.getElementById('outp');
+btn.addEventListener('click',fun);
+function fun(){
+     var key=inputkey.value;
+     var values=(inputvalue.value);
+
+     console.log(key);
+     console.log(values);
+
+
+     if(key&&values){
+         localStorage.setItem(key,values);
+         location.reload();
+     }
+};
+for(var i=0;i<localStorage.length;i++){
+var key=localStorage.key(i);
+var value=localStorage.getItem(key);
+op.innerHTML+=`${key},${value} <br/>`;
+
+}
+
+
+    </script>
+</body>
+</html>
