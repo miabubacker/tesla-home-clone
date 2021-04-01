@@ -302,10 +302,6 @@ button {
   overflow: hidden;
 }
 
-._2 {
-  margin-top: 93px;
-}
-
 .child-3 {
   grid-row: 3/4;
   grid-column: 1/-1;
