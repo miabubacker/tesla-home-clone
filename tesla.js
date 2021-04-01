@@ -26,10 +26,10 @@ function overings() {
     see.classList.remove('seedisplay')
 }
 function opnon() {
-    ops.classList.add('opdisplay');
+    op.classList.add('opdisplay');
 }
 function opoff() {
-    ops.classList.remove('opdisplay');
+    op.classList.remove('opdisplay');
 }
 function _3on() {
     op3.classList.add('op3d');
