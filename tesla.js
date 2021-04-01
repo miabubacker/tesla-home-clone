@@ -21,10 +21,7 @@ function overing() {
     ops.classList.add('opsdisplay');
     see.classList.add('seedisplay');
 }
-function overings() {
-    ops.classList.remove('opsdisplay');
-    see.classList.remove('seedisplay')
-}
+
 function opnon() {
     op.classList.add('opdisplay');
 }
